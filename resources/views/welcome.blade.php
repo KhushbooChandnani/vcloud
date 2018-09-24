@@ -13,12 +13,13 @@
         <!-- Styles -->
         <style>
             html, body {
-                background-color: #fff;
-                color: #636b6f;
+                background:#24b3ab;
+                color:white;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
                 height: 100vh;
                 margin: 0;
+                
             }
 
             .full-height {
@@ -43,14 +44,17 @@
 
             .content {
                 text-align: center;
+                color:white;
             }
 
             .title {
                 font-size: 84px;
+                color:white;
+            
             }
 
             .links > a {
-                color: #636b6f;
+                color: white;
                 padding: 0 25px;
                 font-size: 12px;
                 font-weight: 600;
@@ -60,7 +64,7 @@
             }
 
             .m-b-md {
-                margin-bottom: 30px;
+                margin-bottom: 35px;
             }
         </style>
     </head>
@@ -82,7 +86,7 @@
                     </div>
                     @else
                         <a href="{{ route('login') }}">Login</a>
-                        <a href="{{ route('register') }}">Register</a>
+                    
                     @endauth
                 </div>
             @endif
@@ -93,7 +97,7 @@
                 </div>
 
                 <div class="links">
-                    <a href="{{ URL('/dash') }}">Dashboard</a>
+                    <a href="{{ URL('/dash') }}">Asset Management</a>
                 </div>
             </div>
         </div>
